@@ -1,0 +1,223 @@
+body {
+    font-family: 'Marvel', sans-serif;
+}
+
+
+/*BUTTONS*/
+.btn {
+    background-color: #0f0f0f;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+}
+.btn_form {
+    background-color: #0f0f0f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.btn_form:hover,
+.btn:hover {
+    background-color: #f0141e;
+    transition: 0.5s;
+ }
+
+.btn_contact {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*NAV*/
+
+.navbar-default .navbar-brand {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    color: #f0141e;
+    letter-spacing:1px;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+
+#logo {
+    font-size:1em;
+    color: #fff ;
+}
+
+.navbar-default {
+    border: none;
+    padding: 2em 0;
+    background-color: #0f0f0f;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a  {
+    font-weight: 700;
+    font-size:1.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover  {
+    color: #f0141e;
+}
+
+/*HEADER*/
+.carousel {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.movie-header {
+    background-color: #0f0f0f;
+    margin-bottom: 35px;
+}
+
+.movie-header h1 {
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+}
+
+/*CONTENT*/
+
+#list_description {
+    text-align: center;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.hide {
+    display: none;
+}
+
+/*MOVIE LIST*/
+
+.movie{
+    margin:20px 0;
+    min-height: 280px;
+    border-bottom: 1px solid #eee;
+}
+
+.movie h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.movie p {
+    font-size: 1em;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.movie .genre {
+    font-size: 1em;
+}
+
+.movie span {
+    font-weight: bold;
+    color: #f0141e;
+}
+
+.movie img {
+    max-width: 100%;
+}
+
+.part2 {
+    padding-right: 50px;
+}
+
+.star-rating {
+    padding: 10px 0 20px 0;
+    font-size:1.5em;
+}
+
+/*CONTACT*/
+
+.contact_us {
+    background-color: #0f0f0f;
+    padding: 20px 0 10px 0;
+}
+
+.contact_us h1 {
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact_us label {
+    color: #fff;
+    padding: 0 10px;
+}
+
+
+/*FORMS*/
+
+.form_add--movie {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.form_add--movie>form input,
+.form_add--movie>form textarea,
+.form_add--movie>form select
+{
+    width:50%;
+}
+
+.form_select {
+    padding-top: 5vh;
+    height: 35vh;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #f0141e;
+    color: #fff;
+    text-align: center;
+    height: 82px;
+    margin-bottom: 0;
+
+}
+
+footer p {
+    padding: 25px;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .mobile_hide {
+        display:none;
+    }
+
+    .row{
+        margin-top: 150px;
+    }
+
+    .movie img {
+        padding-bottom: 20px;
+    }
+    .btn {
+        margin-bottom: 20px;
+    }
+}

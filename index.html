@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+    <title>Best Movie Ranking 2017</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!----------NAV----------->
+    <div id="main">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" onclick="CreateMoviesData()" >MARVEL<span id="logo">Rank</span></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html?action=createMovie">Add Movie</a></li>
+                        <li><a href="index.html?action=editMovie">Edit Movie</a></li>
+                        <li><a href="index.html?action=removeMovie">Delete Movie</a></li>
+                        <li><a href="#" onclick="CreateMoviesData(); ">Create Movies list</a></li>
+                        <li><a id="menu_button" class = "hide" href="#" onclick="ClearAllMoviesData()">Clear Movies list</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="main_slider" class="mobile_hide">
+            <div class="carousel container-fluid">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/heroes_avengers_slider.jpg" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/xmen_slider.jpg" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/heroes_xmen_slider.jpg" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+            <div id="rank" class="movie-header container-fluid">
+            <h1>Top 20 Rated Marvel Movies</h1>
+        </div>
+        </header>
+
+    <!----------LIST----------->
+
+    <div  class='container'>
+        <div class="row">
+            <div id="movies-list-region">
+                <h1 id="list_description">nothing here</h1>
+            </div>
+            <div id="movies-form"></div>
+            <div id="movies-remove"></div>
+            <div id="movies-edit"></div>
+        </div>
+    </div>
+
+    <!----------CONTACT----------->
+
+    <div class="contact_us container-fluid">
+        <div class="container">
+            <div class="container col-md-6">
+                <h1>CONTACT US</h1>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="EMAIL">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <input type="text" id="inputPassword" class="form-control" placeholder="NAME">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <textarea rows="8" id="message" class="form-control" placeholder="MESSAGE"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-9 ">
+                            <input class="btn_contact btn btn-success" type="submit" value="Submit">
+                            <input class="btn_contact btn btn-danger" type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container col-md-6">
+                <h1>Watch the new trailer for Marvel Studios</h1>
+                <figure class="flexible-media embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/ue80QwXMRHg" class="embed-responsive-item"></iframe>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!----------FOOTER----------->
+    <footer id="contact" class="container-fluid">
+        <p>Copyright 2017 by mszydelko</p>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
