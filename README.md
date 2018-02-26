@@ -8,7 +8,7 @@ For default list, click "create movies list" and you will be provided with new l
 
 ## LiveView
 
-[a link]http://m.szydelko.eu/
+[Marvel Movie List](http://m.szydelko.eu/)
 
 ## Author
 
