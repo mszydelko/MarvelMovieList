@@ -6,6 +6,10 @@ For default list, click "create movies list" and you will be provided with new l
 
 * Managing your movies data base(adding, editing, erasing) using local storage
 
+## LiveView
+
+[a link]http://m.szydelko.eu/
+
 ## Author
 
 Małgorzata Szydełko
