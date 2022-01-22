@@ -8,9 +8,6 @@ JS, Bootstrap
 
 * Managing your movies data base(adding, editing, erasing) using local storage
 
-## LiveView
-
-[Marvel Movie List](http://m.szydelko.eu/)
 
 ## Author
 
